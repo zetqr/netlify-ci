@@ -13,7 +13,8 @@
     "fixAll": "npm run format && npm run lintfix",
     "build": "gulp build",
     "dev": "gulp",
-    "fixAndBuild": "npm run fixAll && npm run build"
+    "fixAndBuild": "npm run fixAll && npm run build",
+    "lintfixAndPush": "npm run fixAll && git add . && git commit -m 'test' && git push"
   },
   "author": "",
   "license": "ISC",
@@ -25,5 +26,5 @@
     "gulp-plumber": "^1.2.1",
     "prettier": "^3.0.3",
     "stylelint": "^15.11.0"
-  }
+    }
 }
